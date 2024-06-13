@@ -1,0 +1,131 @@
+.Landing{
+    min-height: 100vh;
+    min-height: 100dvh;
+    min-height: 100svh;
+    /* min-height: 100vh; */
+    font-family: 'ibm plex sans';
+    background-color: #1A181B;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    /* gap: 40px; */
+    color: white;
+}
+.landingBg{
+    background-color: #1A181B;
+    position: absolute;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 41% 59%;
+    width: 100%;
+}
+.bgImgDiv{
+    height: 100vh;
+}
+.bgImg{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    /* object-position: right; */
+    opacity: 50%;
+}
+.landinghead1{
+    font-size: 48px;
+    margin: 0 40px;
+    z-index: 1;
+}
+.landinghead2{
+    font-size: 150px;
+    margin: 0 34px;
+    z-index: 1;
+    font-weight: 800;
+    line-height: 1;
+}
+.landingseeMore{
+    height: 78px;
+    border: 1px solid white;
+    margin: 14px 0;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    z-index: 1;
+    font-family: navFont;
+}
+.landingseeMore_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.landingseeMore_button:hover{
+    cursor: pointer;
+}
+
+.landingText{
+    font-size: 25px;
+    margin: 20px 40px;
+    margin-bottom: 60px;
+    z-index: 1;
+
+}
+
+@media only screen and (max-width:880px){
+    
+
+    .landinghead1{
+        /* font-size: 48px; */
+        margin: 0 20px;
+        z-index: 1;
+    }
+    .landinghead2{
+        font-size: 110px;
+        margin: 0 16px;
+        z-index: 1;
+        font-weight: 800;
+    }
+
+    .landingBg{
+        grid-template-columns: auto;
+    }
+    .bgColor{display: none;}
+       
+    .bgImg{
+        opacity: 30%;
+    }
+    
+}
+
+@media only screen and (orientation:portrait){
+    
+
+    .landinghead1{
+        font-size: 28.6px;
+        margin: 0 20px;
+        z-index: 1;
+    }
+    .landinghead2{
+        font-size: 66px;
+        margin: 0 16px;
+        z-index: 1;
+        font-weight: 800;
+    }
+
+    .landingBg{
+        grid-template-columns: auto;
+    }
+    .bgColor{display: none;}
+       
+    
+
+    .landingseeMore{
+       margin-top: 100px;
+    }
+
+}
+
+/* @media only screen and (max-width: 390px){
+    .landinghead2{
+        font-size: 40px;
+    }
+} */
